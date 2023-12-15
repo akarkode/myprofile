@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card-horizontal {
+  display: flex;
+  flex-direction: column; /* Ubah ke tata letak kolom pada layar kecil */
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 80%; /* Ubah lebar menjadi 80% pada layar kecil */
+  max-width: 600px;
+}
+
+img {
+  border-radius: 50%;
+  width: 150px; /* Ubah ukuran gambar profil untuk layar kecil */
+  height: 150px;
+}
+
+.profile-info {
+  text-align: center; /* Atur teks menjadi rata tengah pada layar kecil */
+}
+
+.profile-info h1 {
+  margin: 10px 0; /* Ruang atas dan bawah untuk judul */
+}
+
+.contact-info {
+  display: flex;
+  justify-content: buttom;
+}
+
+.contact-info a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
