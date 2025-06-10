@@ -1,47 +1,120 @@
-/* styles.css */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background: linear-gradient(to right, #f8fbfd, #ecf1f4);
+  color: #222;
 }
 
-.profile-card-horizontal {
-  display: flex;
-  flex-direction: column; /* Ubah ke tata letak kolom pada layar kecil */
-  align-items: center;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  width: 80%; /* Ubah lebar menjadi 80% pada layar kecil */
-  max-width: 600px;
+.container {
+  max-width: 850px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-img {
-  border-radius: 50%;
-  width: 150px; /* Ubah ukuran gambar profil untuk layar kecil */
-  height: 150px;
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.profile-info {
-  text-align: center; /* Atur teks menjadi rata tengah pada layar kecil */
+.header img {
+  width: 120px;
+  border-radius: 100px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 }
 
-.profile-info h1 {
-  margin: 10px 0; /* Ruang atas dan bawah untuk judul */
+h1 {
+  margin: 0.2rem 0;
+  font-size: 2.2rem;
+  color: darkcyan;
 }
 
-.contact-info {
-  display: flex;
-  justify-content: buttom;
+h2 {
+  font-weight: normal;
+  color: #555;
+  font-size: 1.2rem;
 }
 
-.contact-info a {
-  margin: 0 10px;
-  font-size: 24px;
-  color: #333;
+p {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.brand-link {
+  color: darkcyan;
   text-decoration: none;
+}
+
+.projects {
+  margin-top: 2.5rem;
+}
+
+.projects h3 {
+  color: darkcyan;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project {
+  background: #f1faff;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+}
+
+.project a {
+  font-weight: 600;
+  color: #005f73;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.project .coming-soon {
+  color: gray;
+  font-style: italic;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  margin: 0 12px;
+  font-size: 1.6rem;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: darkcyan;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .project {
+    font-size: 0.95rem;
+  }
 }

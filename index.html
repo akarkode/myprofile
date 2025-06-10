@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>akarkode's</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>akarkode (Aldi Setiawan)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Card Horizontal -->
-  <div class="profile-card-horizontal">
-    <section>
-        <img src="asset/img/picture.png" alt="Profile Picture">
-    </section>
-
-    <div class="profile-info">
-      <h2 style="color: darkcyan;">akarkode</h2>
-      <h2 style="color: darkcyan">(Aldi Setiawan)</h2>
-      <p class="description">
-        I'm a backend engineer with a strong focus on Python-based development. I specialize in building scalable APIs, asynchronous systems, and background task orchestration using tools such as FastAPI, Celery, SQLAlchemy, and PostgreSQL. 
-      </p>
-      <p>
-        I’m currently based in Yogyakarta, Indonesia. My engineering interests include distributed task queues, system observability, and performance optimization in data-heavy backend services. I also explore Langchain, Streamlit, and automation tooling as part of my continuous learning.
-      </p>
-      <p>
-        I also have a strong interest in cybersecurity, particularly web application security. I actively participate in bug bounty programs and vulnerability disclosure programs on platforms like Bugcrowd and HackerOne as a bug hunter.
-      </p>
-      <p>
-        <a href="https://akarkode.com" style="color: darkcyan;">akarkode</a> is my personal branding and digital identity, where I share projects, utilities, and APIs I’ve built. It serves as a space for technical experimentation, showcasing my portfolio, and providing open tools to the community.
-      </p>
+  <div class="container">
+    <div class="header">
+      <img src="asset/img/picture.png" alt="akarkode Profile Picture">
+      <h1>akarkode</h1>
+      <h2>(Aldi Setiawan)</h2>
     </div>
 
-    <!-- Kontak -->
-    <div class="contact-info">
+    <p>
+      I’m a backend engineer based in Yogyakarta, Indonesia, focusing on Python-based systems. I specialize in building scalable APIs, asynchronous workers, and distributed backend services using tools such as FastAPI, Celery, SQLAlchemy, and PostgreSQL.
+    </p>
+
+    <p>
+      My technical interests include system observability, distributed task queues, and performance optimization in backend services. I also explore tools like Langchain, Streamlit, and automation scripting as part of my continuous learning.
+    </p>
+
+    <p>
+      I'm active in cybersecurity, especially web application security. I participate in bug bounty and vulnerability disclosure programs on platforms like Bugcrowd and HackerOne as a bug hunter.
+    </p>
+
+    <p>
+      <strong><a href="https://akarkode.com" target="_blank" class="brand-link">akarkode.com</a></strong> is my digital identity, where I publish tools, experiments, and share my technical journey.
+    </p>
+
+    <div class="projects">
+      <h3>Projects</h3>
+      <div class="project">
+        <a href="https://mafia.akarkode.com" target="_blank">MAFIA</a> — Middleware AI Firewall Application
+      </div>
+      <div class="project">
+        JITORM — <span class="coming-soon">Coming soon</span>
+      </div>
+    </div>
+
+    <div class="social-links">
       <a href="https://www.instagram.com/akarkode" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://github.com/akarkode" target="_blank"><i class="fab fa-github"></i></a>
       <a href="mailto:akarkode@gmail.com"><i class="far fa-envelope"></i></a>
